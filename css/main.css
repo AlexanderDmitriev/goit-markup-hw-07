@@ -6,7 +6,7 @@
   --light-text-color: #ffffff;
   --second-color: #2196f3;
   --company-color: #afb1b8;
-  --timing: 250ms;
+  --timing: 1000ms;
   --cubik: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -44,6 +44,11 @@ ul {
   transition-timing-function: var(--cubik);
 }
 
+.link:hover {
+  color: var(--second-color);
+  fill: var(--second-color);
+}
+
 .list {
   list-style: none;
 }
@@ -54,5 +59,106 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.heading {
+  display: flex;
+}
+
+.header-link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
+  margin-bottom: -1.5px;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
+.half-logo {
+  color: var(--second-color);
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-head {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-text-color);
+  display: flex;
+}
+
+.nav-head .link {
+  color: var(--secondary-text-color);
+}
+
+.nav-head .link:hover {
+  color: var(--second-color);
+}
+
+.nav-head li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.for-mailto,
+.for-tel {
+  fill: currentColor;
+  align-items: center;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.for-mailto:hover, .for-mailto:hover,
+.for-tel:hover,
+.for-tel:hover {
+  fill: currentColor;
+}
+
+.post-and-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  display: flex;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.post-and-phone li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.post-and-phone .link {
+  color: var(--primary-text-color);
+}
+
+.post-and-phone .link:hover {
+  color: var(--second-color);
 }
 /*# sourceMappingURL=main.css.map */

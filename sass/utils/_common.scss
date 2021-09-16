@@ -30,6 +30,10 @@ ul {
   transition-property: color, fill;
   transition-duration: var(--timing);
   transition-timing-function: var(--cubik);
+  &:hover {
+    color: var(--second-color);
+    fill: var(--second-color);
+  }
 }
 
 .list {
