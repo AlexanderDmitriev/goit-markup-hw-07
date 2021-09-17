@@ -1,132 +1,3 @@
-.flashing-icons {
-  transition-property: fill, border;
-  transition-duration: var(--timing);
-  transition-timing-function: var(--cubik);
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 30px;
-}
-.team-link {
-  height: 44px;
-  width: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: var(--company-color);
-  border-radius: 50%;
-  background-color: transparent;
-
-  transition-property: background-color, fill;
-  transition-duration: var(--timing);
-  transition-timing-function: var(--cubik);
-}
-
-.team-link:hover,
-.team-link:focus {
-  background-color: var(--second-color);
-  fill: var(--light-text-color);
-}
-/*********************Наши клиенты*******************************/
-.clients {
-  padding-top: 100px;
-  /*padding-bottom: 236px;*/
-}
-.our-clients {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-.clients-list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 94px;
-}
-.company {
-  content: "";
-  height: 92px;
-  width: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  fill: var(--company-color);
-  border: 1px solid var(--company-color);
-}
-.company:hover,
-.company:focus {
-  fill: var(--second-color);
-  border: 1px solid var(--second-color);
-}
-
-/**************************footer css**************************/
-footer {
-  background: var(--outside-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.lower-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #000000;
-  text-decoration: none;
-}
-
-.left-half-logo-footer {
-  color: var(--second-color);
-}
-.right-half-logo-footer {
-  color: var(--light-text-color);
-}
-.footer-post-and-phone:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer-adress {
-  margin-bottom: 9px;
-}
-.footer-post-and-phone .link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.address-ccs {
-  margin-top: 20px;
-}
-
-.footer-adress .link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--light-text-color);
-}
-
-/******************************Социалки*******************************/
-.injoy {
-  margin-left: 70px;
-  margin-top: 12px;
-}
-.injoy-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--light-text-color);
-  margin-bottom: 20px;
-}
 .injoy-list {
   display: flex;
   justify-content: center;
@@ -148,25 +19,6 @@ footer {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--second-color);
-}
-
-.injoy-list-item {
-  content: "";
-  display: inline-block;
-
-  background-size: 22px;
-  background-position: center;
-  fill: var(--light-text-color);
-}
-.injoy-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-.company-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.foot-and-injoy {
-  display: flex;
 }
 
 .injoy-mailing {
@@ -221,14 +73,6 @@ footer {
 }
 
 /*******************************Портфолио**********************************/
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 
 .projects {
   position: relative;

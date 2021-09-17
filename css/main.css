@@ -90,6 +90,14 @@ ul {
   margin-top: 30px;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .heading {
   display: flex;
 }
@@ -185,6 +193,9 @@ ul {
   color: #000000;
   font-family: Raleway, sans-serif;
   text-decoration: none;
+}
+
+.logo--upper {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 93px;
@@ -357,5 +368,143 @@ ul {
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+/******************************Социалки*******************************/
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.social-list__items {
+  content: "";
+  display: inline-block;
+  background-size: 22px;
+  background-position: center;
+  fill: var(--light-text-color);
+}
+
+.social-list__items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--company-color);
+  border-radius: 50%;
+  background-color: transparent;
+  transition-property: background-color, fill;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+}
+
+.social-list__link:hover, .social-list__link:focus {
+  background-color: var(--second-color);
+  fill: var(--light-text-color);
+}
+
+/*********************Наши клиенты*******************************/
+.clients {
+  padding-top: 100px;
+}
+
+.our-clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  font-style: normal;
+  color: currentColor;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list__company {
+  content: "";
+  height: 92px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  fill: var(--company-color);
+  border: 1px solid var(--company-color);
+  transition-property: fill, border;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+}
+
+.clients-list__company:hover, .clients-list__company:focus {
+  fill: var(--second-color);
+  border: 1px solid var(--second-color);
+}
+
+/**************************footer css**************************/
+footer {
+  background: var(--outside-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.foot {
+  display: flex;
+}
+
+.address-ccs {
+  margin-top: 20px;
+}
+
+.foot__adress {
+  margin-bottom: 9px;
+}
+
+.foot__adress .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+}
+
+.foot__contacts .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.foot__contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.injoy-sector {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.injoy-sector__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
