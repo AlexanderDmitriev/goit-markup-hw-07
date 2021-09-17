@@ -47,3 +47,17 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--light-text-color);
+  letter-spacing: 0.06em;
+  background-color: var(--second-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 30px;
+}

@@ -1,13 +1,13 @@
 .heading {
   display: flex;
 }
-.header-link {
+.header-navigation__link {
   display: block;
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.active-link {
+.header-navigation__link--active-link {
   &::after {
     content: "";
     position: absolute;
@@ -24,29 +24,12 @@
   }
 }
 
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #000000;
-  text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
-}
-.half-logo {
-  color: var(--second-color);
-}
 .header-navigation {
   display: flex;
   align-items: center;
 }
 .nav-head {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--secondary-text-color);
+  @include text-decoration(500, 14px, 1.14, var(--secondary-text-color));
   display: flex;
   .link {
     color: var(--secondary-text-color);
@@ -62,8 +45,6 @@
 .for-mailto,
 .for-tel {
   fill: currentColor;
-  align-items: center;
-  display: inline-flex;
   margin-right: 10px;
 
   &:hover,
@@ -72,12 +53,11 @@
   }
 }
 .post-and-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  @include text-decoration(500, 14px, 1.14, currentColor);
   display: flex;
   margin-left: auto;
   margin-right: 40px;
+  justify-content: center;
   li:not(:last-child) {
     margin-right: 50px;
   }

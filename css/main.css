@@ -61,18 +61,32 @@ ul {
   margin: 0 auto;
 }
 
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--light-text-color);
+  letter-spacing: 0.06em;
+  background-color: var(--second-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 30px;
+}
+
 .heading {
   display: flex;
 }
 
-.header-link {
+.header-navigation__link {
   display: block;
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.active-link::after {
+.header-navigation__link--active-link::after {
   content: "";
   position: absolute;
   display: block;
@@ -86,22 +100,6 @@ ul {
   margin-bottom: -1.5px;
 }
 
-.logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #000000;
-  text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
-}
-
-.half-logo {
-  color: var(--second-color);
-}
-
 .header-navigation {
   display: flex;
   align-items: center;
@@ -111,6 +109,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  font-style: normal;
   color: var(--secondary-text-color);
   display: flex;
 }
@@ -130,8 +129,6 @@ ul {
 .for-mailto,
 .for-tel {
   fill: currentColor;
-  align-items: center;
-  display: inline-flex;
   margin-right: 10px;
 }
 
@@ -145,9 +142,12 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  font-style: normal;
+  color: currentColor;
   display: flex;
   margin-left: auto;
   margin-right: 40px;
+  justify-content: center;
 }
 
 .post-and-phone li:not(:last-child) {
@@ -160,5 +160,52 @@ ul {
 
 .post-and-phone .link:hover {
   color: var(--second-color);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  font-style: normal;
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+}
+
+.logo--accent {
+  color: var(--second-color);
+}
+
+.logo--dark {
+  color: #000000;
+}
+
+.logo--light {
+  color: var(--light-text-color);
+}
+
+/**Герой**/
+.hero {
+  background: var(--outside-background-color);
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  font-style: normal;
+  color: var(--light-text-color);
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */
