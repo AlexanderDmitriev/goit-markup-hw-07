@@ -48,6 +48,21 @@ ul {
   margin: 0 auto;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+
 .button {
   font-weight: 700;
   font-size: 16px;

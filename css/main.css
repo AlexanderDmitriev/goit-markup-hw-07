@@ -61,6 +61,21 @@ ul {
   margin: 0 auto;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -207,5 +222,140 @@ ul {
   font-style: normal;
   color: var(--light-text-color);
   text-transform: uppercase;
+}
+
+/************Секция "О нас"*******************/
+.about-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+}
+
+.about {
+  display: flex;
+}
+
+.about__topic:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__topic::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about__topic--antenna::before {
+  background-image: url(../images/antenna-svg.svg);
+}
+
+.about__topic--clock::before {
+  background-image: url(../images/clock-svg.svg);
+}
+
+.about__topic--diagram::before {
+  background-image: url(../images/diagram-svg.svg);
+}
+
+.about__topic--kosmonaut::before {
+  background-image: url(../images/kosmonaut-svg.svg);
+}
+
+.about_character {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: normal;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  width: 270px;
+}
+
+/***********************Чем мы занимаемся**************************************/
+.our-work {
+  padding-bottom: 94px;
+}
+
+.our-work__picture {
+  position: relative;
+}
+
+.our-work__picture:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-work__text {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: normal;
+  color: var(--light-text-color);
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+/****************************Наша команда******************************/
+.team {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.team__list {
+  box-shadow: 1px 1px 5px var(--company-color);
+  border-radius: 4px;
+}
+
+.team__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__info {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  font-style: normal;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.team__role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  font-style: normal;
+  color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
