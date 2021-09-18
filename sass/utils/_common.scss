@@ -74,9 +74,23 @@ ul {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+}
+.button--hero {
   margin-top: 30px;
 }
-
+.button--footer {
+  align-items: center;
+  padding: 5px 26px;
+  display: inline-flex;
+  position: relative;
+  border: none;
+  & > .injoy-mailing-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+    margin-left: 10px;
+  }
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);

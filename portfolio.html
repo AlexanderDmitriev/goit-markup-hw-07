@@ -19,30 +19,21 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header">
       <div class="container heading">
         <nav class="header-navigation">
           <!---Лого сайта-->
-          <a href="./index.html" class="logo" lang="en">
-            <span class="logo--accent">Web</span
-            ><span class="logo--dark">Studio</span>
+          <a href="./index.html" class="logo logo--upper" lang="en">
+            <span class="logo--accent">Web</span><span class="logo--dark">Studio</span>
           </a>
 
           <ul class="list nav-head">
             <!-----------------Меню в хедере---------------->
             <li>
-              <a href="./index.html" class="link header-navigation__link">
-                Студия
-              </a>
+              <a href="./index.html" class="link header-navigation__link "> Студия </a>
             </li>
             <li>
-              <a
-                href="./portfolio.html"
-                class="
-                  link
-                  header-navigation__link header-navigation__link--active-link
-                "
-              >
+              <a href="./portfolio.html" class="link header-navigation__link header-navigation__link--active-link">
                 Портфолио
               </a>
             </li>
@@ -53,18 +44,17 @@
         </nav>
         <ul class="list post-and-phone">
           <!---------------Почта и телефон---------------->
-          <li>
-            <a
-              href="mailto:info@devstudio.com"
-              class="link header-navigation__link"
+          <li >
+            <a href="mailto:info@devstudio.com" class="link header-navigation__link"
               ><svg class="for-mailto" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com
-            </a>
+              info@devstudio.com 
+          </a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="link header-navigation__link">
+            <a href="tel:+380961111111" class="link header-navigation__link"
+              >
               <svg class="for-tel" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -319,16 +309,16 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container foot-and-injoy">
+        <footer class="container">
+      <div class="foot">
         <div>
-          <a href="./index.html" class="lower-logo" lang="en">
-            <span class="left-half-logo-footer">Web</span
-            ><span class="right-half-logo-footer">Studio</span>
+          <a href="./index.html" class="logo" lang="en">
+            <span class="logo--accent">Web</span
+            ><span class="logo--light">Studio</span>
           </a>
           <address class="address-ccs">
             <ul>
-              <li class="list footer-adress">
+              <li class="list foot__adress">
                 <a
                   href="https://goo.gl/maps/MTrRzGX6fxmaniAc8"
                   target="_blank"
@@ -337,69 +327,56 @@
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="list footer-post-and-phone">
+              <li class="list foot__contacts">
                 <a href="mailto:info@devstudio.com" class="link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="list footer-post-and-phone">
+              <li class="list foot__contacts">
                 <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="injoy">
-          <h3 class="injoy-text">присоединяйтесь</h3>
-          <ul class="list injoy-list">
-            <li class="injoy-list-item">
-              <a href="" class="social-link instagram"
-                ><span class="visually-hidden">Instagram</span>
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="injoy-list-item">
-              <a href="" class="social-link twitter"
-                ><span class="visually-hidden">Twitter</span>
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="injoy-list-item">
-              <a href="" class="social-link facebook"
-                ><span class="visually-hidden">facebook</span>
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="injoy-list-item">
-              <a href="" class="social-link linkedin"
-                ><span class="visually-hidden">linkedin</span>
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="injoy-mailing">
-          <h3 class="injoy-text">Подпишитесь на рассылку</h3>
-          <form class="injoy-text-mailing-form">
-            <input
-              type="email"
-              name="injoy-mailing-input"
-              placeholder="E-mail"
-              class="injoy-mailing-input-class"
-            />
-            <button type="submit" class="injoy-mailing-button">
-              Подписаться <span class="injoy-mailing-icon"></span>
-            </button>
-          </form>
-        </div>
+          <div class="injoy-sector">
+            <h3 class="injoy-sector__title">присоединяйтесь</h3>
+            <ul class="list social-list">
+              <li class="social-list__items">
+                <a href="" class=" social-list__link social-list__link--footer"><span class="visually-hidden">Instagram</span>
+                  <svg class="icon"  width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+                </a>
+              </li>
+              <li class="social-list__items">
+                 <a href="" class="social-list__link social-list__link--footer"><span class="visually-hidden">Twitter</span>
+                  <svg class="icon"  width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg> </a>
+              </li>
+              <li class="social-list__items ">
+                <a href="" class="social-list__link social-list__link--footer"><span class="visually-hidden">facebook</span>
+                  <svg class="icon"  width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg> </a>
+              </li>
+              <li class="social-list__items">
+                <a href="" class="social-list__link social-list__link--footer"><span class="visually-hidden">linkedin</span>
+                  <svg class="icon"  width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg> </a>
+              </li>
+            </ul>
+          </div>
+          <div class="injoy-mailing">
+                <h3 class="injoy-sector__title">Подпишитесь на рассылку</h3>
+                <form class="injoy-mailing__text-form">
+                  <input type="email" name="injoy-mailing-input" placeholder="E-mail" class="injoy-mailing__input-class"> 
+                  <button type="button" class="button button--footer">Подписаться <span class="injoy-mailing-icon"></span></button>
+                </form>
+          </div>
       </div>
+      
     </footer>
   </body>
 </html>

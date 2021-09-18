@@ -87,7 +87,25 @@ ul {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+}
+
+.button--hero {
   margin-top: 30px;
+}
+
+.button--footer {
+  align-items: center;
+  padding: 5px 26px;
+  display: inline-flex;
+  position: relative;
+  border: none;
+}
+
+.button--footer > .injoy-mailing-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon-send.svg);
+  margin-left: 10px;
 }
 
 .visually-hidden {
@@ -395,17 +413,32 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--company-color);
   border-radius: 50%;
+}
+
+.social-list__link--team {
+  fill: var(--company-color);
   background-color: transparent;
   transition-property: background-color, fill;
   transition-duration: var(--timing);
   transition-timing-function: var(--cubik);
 }
 
-.social-list__link:hover, .social-list__link:focus {
+.social-list__link--team:hover, .social-list__link--team:focus {
   background-color: var(--second-color);
   fill: var(--light-text-color);
+}
+
+.social-list__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--light-text-color);
+  transition-property: background-color;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+}
+
+.social-list__link--footer:hover, .social-list__link--footer:focus {
+  background-color: var(--second-color);
 }
 
 /*********************Наши клиенты*******************************/
@@ -506,5 +539,33 @@ footer {
   text-transform: uppercase;
   color: var(--light-text-color);
   margin-bottom: 20px;
+}
+
+.injoy-mailing {
+  margin-left: 103px;
+  margin-top: 12px;
+}
+
+.injoy-mailing__text-form {
+  display: flex;
+}
+
+.injoy-mailing__input-class {
+  height: 50px;
+  width: 358px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--primary-text-color);
+  padding: 16px 15px;
+  color: var(--primary-text-color);
+  margin-right: 12px;
+}
+
+.injoy-mailing__input-class::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 /*# sourceMappingURL=main.css.map */

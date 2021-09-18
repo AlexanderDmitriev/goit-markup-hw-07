@@ -22,8 +22,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--company-color);
   border-radius: 50%;
+}
+
+.social-list__link--team {
+  fill: var(--company-color);
+
   background-color: transparent;
 
   transition-property: background-color, fill;
@@ -34,5 +38,19 @@
   &:focus {
     background-color: var(--second-color);
     fill: var(--light-text-color);
+  }
+}
+
+.social-list__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--light-text-color);
+
+  transition-property: background-color;
+  transition-duration: var(--timing);
+  transition-timing-function: var(--cubik);
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-color);
   }
 }
