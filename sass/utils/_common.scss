@@ -30,7 +30,8 @@ ul {
   transition-property: color, fill;
   transition-duration: var(--timing);
   transition-timing-function: var(--cubik);
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--second-color);
     fill: var(--second-color);
   }
@@ -97,4 +98,8 @@ ul {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+input[type="radio"] {
+  display: none;
 }

@@ -68,27 +68,38 @@
     <main>
       <h1 class="visually-hidden">Портфолио</h1>
       <section class="port">
-        <div class="container">
-          <ul class="list content filter-button">
-            <li>
-              <button type="button" class="portfolio-button">Все</button>
+          <div class="container">
+            <ul class="list content projects-filter">
+            <li class="projects-filter__item">
+               <label>
+                <input type="radio" name="filter" value="all"/> Все</label>
+              
             </li>
-            <li>
-              <button type="button" class="portfolio-button">Веб-сайты</button>
+            <li class="projects-filter__item">
+              <label>
+                <input type="radio" name="filter"  value="web"/>Веб-сайты
+              </label>
             </li>
-            <li>
-              <button type="button" class="portfolio-button">Приложения</button>
+            <li class="projects-filter__item">
+              <label>
+                <input type="radio" name="filter"  value="soft"/>Приложения
+              </label>
             </li>
-            <li>
-              <button type="button" class="portfolio-button">Дизайн</button>
+            <li class="projects-filter__item">
+              <label>
+                <input type="radio" name="filter"  value="design"/>Дизайн
+              </label>
             </li>
-            <li>
-              <button type="button" class="portfolio-button">Маркетинг</button>
+            <li class="projects-filter__item">
+              <label>
+              <input type="radio" name="filter"  value="marketing"/>Маркетинг
+                </label>
+              </label>
             </li>
-          </ul>
+          </ul>  
 
-          <ul class="list content content-projects">
-            <li class="projects">
+          <ul class="list content">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-1.jpg"
@@ -96,7 +107,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -105,12 +116,12 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 class="company-name">Технокряк</h2>
-                <p class="project-type">Веб-сайт</p>
+                <h2 class="content-projects__name">Технокряк</h2>
+                <p class="content-projects__type">Веб-сайт</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-2.jpg"
@@ -118,7 +129,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ipsam atque debitis fugiat sunt nisi libero beatae maxime
@@ -127,14 +138,14 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 class="company-name">
+                <h2 class="content-projects__name">
                   Постер <span lang="en">New Orlean vs Golden Star</span>
                 </h2>
-                <p class="project-type">Дизайн</p>
+                <p class="content-projects__type">Дизайн</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-3.jpg"
@@ -142,7 +153,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur, dolores facilis alias quam sapiente dolorem
@@ -152,14 +163,14 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 class="company-name">
+                <h2 class="content-projects__name">
                   Ресторан <span lang="en">Seafood</span>
                 </h2>
-                <p class="project-type">Приложение</p>
+                <p class="content-projects__type">Приложение</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-4.jpg"
@@ -167,7 +178,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur, dolores facilis alias quam sapiente dolorem
@@ -177,14 +188,14 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 class="company-name">
+                <h2 class="content-projects__name">
                   Проект <span lang="en">Prime</span>
                 </h2>
-                <p class="project-type">Маркетинг</p>
+                <p class="content-projects__type">Маркетинг</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-5.jpg"
@@ -192,7 +203,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur, dolores facilis alias quam sapiente dolorem
@@ -202,14 +213,14 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 class="company-name">
+                <h2 class="content-projects__name">
                   Проект <span lang="en">Boxes</span>
                 </h2>
-                <p class="project-type">Приложение</p>
+                <p class="content-projects__type">Приложение</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-6.jpg"
@@ -217,7 +228,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur, dolores facilis alias quam sapiente dolorem
@@ -227,14 +238,14 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 lang="en" class="company-name">
+                <h2 lang="en" class="content-projects__name">
                   Inspiration has no Borders
                 </h2>
-                <p class="project-type">Веб-сайт</p>
+                <p class="content-projects__type">Веб-сайт</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-7.jpg"
@@ -242,7 +253,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur, dolores facilis alias quam sapiente dolorem
@@ -252,14 +263,14 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 class="company-name">
+                <h2 class="content-projects__name">
                   Издание <span lang="en">Limited Edition</span>
                 </h2>
-                <p class="project-type">Дизайн</p>
+                <p class="content-projects__type">Дизайн</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-8.jpg"
@@ -267,7 +278,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur, dolores facilis alias quam sapiente dolorem
@@ -277,12 +288,12 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 class="company-name">Проект <span lang="en">LAB</span></h2>
-                <p class="project-type">Маркетинг</p>
+                <h2 class="content-projects__name">Проект <span lang="en">LAB</span></h2>
+                <p class="content-projects__type">Маркетинг</p>
               </div>
             </li>
 
-            <li class="projects">
+            <li class="content-projects">
               <div class="thumb">
                 <img
                   src="./images/portfolio-9.jpg"
@@ -290,7 +301,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="project-topic">
+                <div class="content-projects__topic">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Consequatur, dolores facilis alias quam sapiente dolorem
@@ -300,8 +311,8 @@
                 </div>
               </div>
               <div class="info-project">
-                <h2 lang="en" class="company-name">Growing Business</h2>
-                <p class="project-type">Приложение</p>
+                <h2 lang="en" class="content-projects__name">Growing Business</h2>
+                <p class="content-projects__type">Приложение</p>
               </div>
             </li>
           </ul>
