@@ -525,7 +525,7 @@ input[type="radio"] {
   padding-bottom: 94px;
 }
 
-.clients-list:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 

@@ -12,10 +12,9 @@
   display: flex;
   justify-content: center;
   padding-bottom: 94px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+}
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .clients-list__company {
