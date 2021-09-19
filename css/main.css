@@ -503,53 +503,7 @@ input[type="radio"] {
   background-color: var(--second-color);
 }
 
-/*********************Наши клиенты*******************************/
-.clients {
-  padding-top: 100px;
-}
-
-.our-clients {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  font-style: normal;
-  color: currentColor;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-.clients-list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 94px;
-}
-
-/**Это относится к элементу li-ки, а не к самомму ul**/
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.clients-list__company {
-  content: "";
-  height: 92px;
-  width: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  fill: var(--company-color);
-  border: 1px solid var(--company-color);
-  transition-property: fill, border;
-  transition-duration: var(--timing);
-  transition-timing-function: var(--cubik);
-}
-
-.clients-list__company:hover, .clients-list__company:focus {
-  fill: var(--second-color);
-  border: 1px solid var(--second-color);
-}
-
+/**@import "./components/clients";*/
 /**************************footer css**************************/
 footer {
   background: var(--outside-background-color);
