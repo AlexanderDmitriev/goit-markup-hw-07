@@ -412,6 +412,7 @@ input[type="radio"] {
 .team {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: #f5f4fa;
 }
 
 .team__list {
@@ -524,7 +525,7 @@ input[type="radio"] {
   padding-bottom: 94px;
 }
 
-.clients-list__item:not(:last-child) {
+.clients-list:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -653,6 +654,7 @@ footer {
   border-color: transparent;
   padding: 6px 22px;
   border-radius: 4px;
+  background-color: #f5f4fa;
   transition-property: color, background-color, box-shadow;
   transition-duration: var(--timing);
   transition-timing-function: var(--cubik);
